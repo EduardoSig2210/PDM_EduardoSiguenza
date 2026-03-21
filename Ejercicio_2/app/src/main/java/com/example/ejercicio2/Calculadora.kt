@@ -4,13 +4,9 @@ class Calculadora (
     val marca: String,
     val aniosDeVida: Int
 ){
-    init{
-        precio = 0.0
-    }
 
-    constructor (marca:String, aniosDeVida: Int, precio: Double) : this(marca, aniosDeVida){
-        this.precio = precio
-    }
+
+    constructor (marca:String, aniosDeVida: Int) : this(marca, aniosDeVida)
 
     fun suma(a: Double, b: Double): Double{
         return a + b
