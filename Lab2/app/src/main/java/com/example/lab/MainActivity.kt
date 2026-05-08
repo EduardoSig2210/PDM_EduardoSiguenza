@@ -52,14 +52,7 @@ class MainActivity : ComponentActivity() {
                     .padding(16.dp),
                 horizontalAlignment = Alignment.CenterHorizontally,
             ){
-                TextField(
-                    value = nombre.value,
-                    onValueChange = {nombre.value = it},
-                    placeholder = {Text("Nombre")},
-                    modifier = Modifier.fillMaxWidth()
-                )
-
-                Spacer(modifier = Modifier.height(8.dp))
+                Spacer(modifier = Modifier.height(15.dp))
 
                 Button(
                     onClick = {
