@@ -20,24 +20,22 @@ class MainActivity : ComponentActivity() {
         enableEdgeToEdge()
         setContent {
             Lab6Theme {
-                MealScreen()
+                    Greeting()
+
             }
         }
     }
 }
 
 @Composable
-fun Greeting(name: String, modifier: Modifier = Modifier) {
-    Text(
-        text = "Hello $name!",
-        modifier = modifier
-    )
+fun Greeting() {
+    MealScreen()
 }
 
 @Preview(showBackground = true)
 @Composable
 fun GreetingPreview() {
     Lab6Theme {
-        Greeting("Android")
+        Greeting()
     }
 }

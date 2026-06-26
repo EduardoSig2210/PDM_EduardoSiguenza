@@ -1,7 +1,7 @@
 package com.example.lab6.data.model
 
 data class Meal(
-    val idMeal: String,
+    val idMeal: Int,
     val strMeal: String,
     val strCategory: String,
     val strArea: String,
